@@ -433,7 +433,7 @@ section .main-container {
 
 
 #education {
-
+  background-color: rgba(0, 0, 0, 0.7);
   padding: 0px 150px;
   min-height: 100vh;
   /* background: linear-gradient(to bottom, #05030a, #0a0f2c);*/

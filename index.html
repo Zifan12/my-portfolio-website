@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+      <link rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+      <link rel="stylesheet" href="style.css">
+      <title>Portfolio Website</title>
+   </head>
+   <body class="home">
+      <!-- Particle container-->
+      <div id="particles-js"></div>
+      
+      <!-- navgaition menu-->
+      <nav>
+         <div class="nav-container">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1500">
+               <img class="nav-icon" src="icon2.png" alt="">
+               <span>Zifan Li</span>
+            </div>
+            <div class="links">
+               <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="0"><a href="#home">Home</a></div>
+               <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100"><a href="#about">About</a></div>
+               <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200"><a href="#education">Education</a></div>
+               <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300"><a href="#skills">Skills</a></div>
+               <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400"><a href="#projects">Projects</a></div>
+               <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500"><a href="#certificates">Certificates</a></div>
+               <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="600"><a href="#contact">Contact</a></div>
+            </div>
+            <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+         </div>
+         <div class="dropdown" id="mobile-menu">
+         <div class="links">
+            <a href="#home" onclick="closeDropdown()">Home</a>
+            <a href="#about" onclick="closeDropdown()">About</a>
+            <a href="#education" onclick="closeDropdown()">Education</a>
+            <a href="#skills" onclick="closeDropdown()">Skills</a>
+            <a href="#projects" onclick="closeDropdown()">Projects</a>
+            <a href="#certificates" onclick="closeDropdown()">Certificates</a>
+            <a href="#contact" onclick="closeDropdown()">Contact</a>
+            <i class="fa-solid fa-xmark cancel" onclick="closeDropdown()"></i>
+         </div>
+         </div>
+      </nav>
+      <!-- Home Section Start -->
+      <section class="home" id="home">
+         <div class="main-container">
+            <!-- <div class="profile-wrapper"> might not need this--> 
+               <div class="profile-image" data-aos="zoom-out" data-aos-duration="1500">
+                  <img src="profile_image.png" alt="">
+               </div>
+            <!-- </div> -->
+            <div class="content">
+               <h1 data-aos="fade-left" data-aos-duration="1500" data-aos-delay="700">
+                  Hi I'm <span>Zifan</span>
+               </h1>
+               <div class="typewriter" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="900">
+                  I'm a <span id="typewriter-text"></span>
+               </div>
+               <p data-aos="flip-down" data-aos-duration="1500" data-aos-delay="1100">Third-year CS student working toward a career in AI engineering — developing skills in machine learning, generative AI, and building real-world projects.</p>
+               <div class="social-links">
+                  <a href="https://github.com/Zifan12" target="_blank" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1300"> 
+                     <i class="fa-brands fa-github"></i></a>
+                  <a href="https://www.linkedin.com/in/zifan-li-a9889b22a/" target="_blank" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1400">
+                     <i class="fa-brands fa-linkedin"></i></a>
+                  <a href="https://www.instagram.com/zifan.li_/" target="_blank" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1500">
+                     <i class="fa-brands fa-instagram"></i></a>
+                  <a href="mailto:zifan.li912@gmail.com" target="_blank" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1600">
+                     <i class="fa-solid fa-envelope"></i>
+                  </a>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <!-- About Section Start -->
+      <section class="about" id="about">
+         <div class="content">
+            <div class="title about-title" data-aos="fade-up" data-aos-duration="1500"><span>Introduction</span></div>
+            <div class="about-details">
+               <div class="left" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="200">
+                  <img src="img.jpg" alt = ""/>
+               </div>
+               <div class="right">
+               <div class="topic"  data-aos="fade-left" data-aos-duration="1500" data-aos-delay="200">My Mission</div>
+                  <p  data-aos="flip-down" data-aos-duration="1500" data-aos-delay="300">
+                     I'm a third-year Computer Science student at University of Alberta, passionate about artificial intelligence, machine learning, and building creative technical solutions.
+                     I’m currently focused on hands-on projects involving neural networks, generative AI, and automation tools. My goal is to deepen my understanding of modern AI systems and apply them to real-world problems.
+                     I’m actively seeking AI-focused internships for Summer 2026.
+                  </p>
+                  <div class="button"  data-aos="zoom-in-left" data-aos-duration="1500" data-aos-delay="400">
+                     <a href="https://www.youtube.com/" target="_blank" class="download-btn">Download CV</a>
+               
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <!-- Education Section Start -->
+      <section class="education" id="education">
+      <div class="content">
+         <h2 class="title education-title" data-aos="fade-up" data-aos-duration="1500"><span>Academic Background</span></h2>
+         <div class="timeline-horizontal">
+            <div class="timeline-track">
+            
+            <!-- High School -->
+            <div class="timeline-item item-hta" data-aos="zoom-in-right" data-aos-duration="1500" data-aos-delay="300">
+               <div class="timeline-icon icon-hta">
+                  <img src="HTA2.png" alt="Holy Trinity Academy">
+               </div>
+               <div class="education-background">
+                  <div class="timeline-content content-hta">
+                     <h3>High School</h3>
+                     <p>Holy Trinity Academy, Okotoks, AB</p>
+                  </div>
+                  <span class="timeline-date date-hta">2020 - 2023</span>
+               </div>
+            </div>
+
+            <!-- University -->
+            <div class="timeline-item item-uofa"  data-aos="zoom-in-right" data-aos-duration="1500" data-aos-delay="600">
+               <div class="timeline-icon icon-uofa">
+                  <img src="UofA.png" alt="University of Alberta">
+               </div>
+               <div class="education-background">
+                  <div class="timeline-content content-uofa">
+                     <h3>Bachelor of Science (BSc) Specialization in Computing Science</h3>
+                     <p>University of Alberta, Edmonton, AB</p>
+                     <ul>
+                     <li>3rd Year - Present</li>
+                     </ul>
+                  </div>
+                  <span class="timeline-date date-uofa">2023 - Present</span>
+                </div>
+              </div>
+            </div>
+         </div>
+      </div>
+      </section>
+
+      <!-- Skills Section Start 
+      <section class="skills" id="skills">
+
+
+      </section>
+      -->
+
+      <!-- Projects Section Start -->
+      <section class="projects" id="projects">
+         <div class="content">
+            <div class="title projects-title" data-aos="fade-up" data-aos-duration="1200"><span>Projects</span></div>
+            <!-- <p class="section-subtitle"><span>Things I've Built</span></p> -->
+
+            <!-- Swiper Container -->
+            <div class="swiper projectSwiper">
+               <div class="swiper-wrapper">
+                  
+                  <!-- Slide 1 -->
+                  <div class="swiper-slide">
+                     <div class="project-box">
+                     
+                        <!-- Top Box: Image -->
+                        <div class="project-card-top" data-aos="zoom-in"  data-aos-duration="1200" data-aos-delay="200">
+                           <a href="https://github.com/Zifan12/heart-disease-predictor" target="_blank" class="project-card">
+                           <img src="heart.png" alt="Heart Disease">
+                           </a>
+                        </div>
+
+                        <!-- Bottom Box: Info -->
+                        <div class="project-card-bottom" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="400">
+                           <h3 class="project-title">Heart Disease Predictor</h3>
+                           <p class="project-description">Compares Multiple Machine Learning Models to predict heart disease based on patient data. The final model is deployed with Streamlit and includes SHAP interpretability.</p>
+                           <div class="project-tags">
+                           <span>Python</span>
+                           <span>Binary Classification </span>
+                           <span>Streamlit</span>
+                           <span>SHAP</span>
+                           <span>Model Comparison</span>
+                           </div>
+                        </div>
+
+                     </div>
+                  </div> 
+
+                  <!-- Slide 2 -->
+                  <div class="swiper-slide">
+                     <div class="project-box">
+
+                        <!-- Top Box: Image -->
+                        <div class="project-card-top" data-aos="zoom-in"  data-aos-duration="1200" data-aos-delay="200">
+                           <a href="https://www.youtube.com/" target="_blank" class="project-card">
+                           <img src="yt.png" alt="YouTube Project">
+                           </a>
+                        </div>
+
+                        <!-- Bottom Box: Info -->
+                        <div class="project-card-bottom" data-aos="fade-up"  data-aos-duration="1200" data-aos-delay="400">
+                           <h3 class="project-title">YouTube Analytics Dashboard</h3>
+                           <p class="project-description">A dashboard that visualizes YouTube data with charts and engagement insights using React and Chart.js.</p>
+                           <div class="project-tags">
+                           <span>JavaScript</span>
+                           <span>React</span>
+                           <span>Chart.js</span>
+                           <span>API</span>
+                           </div>
+                        </div>
+
+                     </div>
+                  </div>
+
+                  <!-- Slide 3 -->
+                  <div class="swiper-slide">
+                     <div class="project-box">
+
+                        <!-- Top Box: Image -->
+                        <div class="project-card-top" data-aos="zoom-in"  data-aos-duration="1200" data-aos-delay="200">
+                           <a href="https://www.google.com/" target="_blank" class="project-card">
+                           <img src="icon3.png" alt="YouTube Project">
+                           </a>
+                        </div>
+
+                        <!-- Bottom Box: Info -->
+                        <div class="project-card-bottom" data-aos="fade-up"  data-aos-duration="1200" data-aos-delay="400">
+                           <h3 class="project-title">YouTube Analytics Dashboard</h3>
+                           <p class="project-description">A dashboard that visualizes YouTube data with charts and engagement insights using React and Chart.js.</p>
+                           <div class="project-tags">
+                           <span>JavaScript</span>
+                           <span>React</span>
+                           <span>Chart.js</span>
+                           <span>API</span>
+                           </div>
+                        </div>
+
+                     </div>
+                  </div>
+
+                  
+
+
+               </div>
+               <div class="swiper-pagination" data-aos="zoom-in-left"  data-aos-duration="1200" data-aos-delay="600"></div>
+               <!-- Navigation -->
+               <div class="swiper-button-next" data-aos="fade-left"  data-aos-duration="1200" data-aos-delay="800"></div>
+               <div class="swiper-button-prev" data-aos="fade-right"  data-aos-duration="1200" data-aos-delay="800"></div>
+            </div>
+         </div>
+      </section>
+
+
+      <!-- Certificates Section Start -->
+      <section class="certificates" id="certificates">
+         <div class="content">
+            <div class="title certificates-title" data-aos="fade-up" data-aos-duration="1500"><span>Certificates</span></div>
+
+            <div class="cert-grid">
+
+               <!-- Certificate 1 -->
+               <div class="cert-wrapper" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="100">
+                  <h3 class="cert-title">Machine Learning Specialization</h3>
+                  <div class="cert-card">
+                     <canvas class="pdf-canvas" data-url="cert1.pdf"></canvas>
+                  </div>
+                  
+                  <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/75ZCZ2E1XARW"
+                     target="_blank" class="view-button">View Credential</a>
+               </div>
+
+               <!-- Certificate 2 -->
+               <div class="cert-wrapper" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="200">
+                  <h3 class="cert-title">Python Specialization</h3>
+                  <div class="cert-card">
+                     <canvas class="pdf-canvas" data-url="cert1.pdf"></canvas>
+                  </div>
+                  <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/75ZCZ2E1XARW"
+                     target="_blank" class="view-button">View Credential</a>
+               </div>
+               
+               <!-- Certificate 3 -->
+               <div class="cert-wrapper" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="300">
+                  <h3 class="cert-title">Third Specialization</h3>
+                  <div class="cert-card">
+                     <canvas class="pdf-canvas" data-url="cert1.pdf"></canvas>
+                  </div>
+            
+                  <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/75ZCZ2E1XARW"
+                     target="_blank" class="view-button">View Credential</a>
+               </div>
+
+            
+            </div>
+         </div>
+      </section>
+      
+      <!-- Contact Section Start -->
+      <section id="contact" class="contact-section">
+      <div class="contact-container">
+         <h2 class="section-title" data-aos="fade-up" data-aos-duration="1500">Get in Touch </h2>
+         <p class="contact-intro" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">Let’s connect! Whether it's collaboration, questions, or just a quick hello.</p>
+
+         <form action="https://formspree.io/f/mldlgqrd" method="POST" class="contact-form"  data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="500" >
+            <input type="text" name="name" placeholder="Your Name" required />
+            <input type="email" name="email" placeholder="Your Email" required />
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+         </form>
+
+         <div class="contact-info" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="700" >
+            <p>Email: <a href="mailto:you@example.com">zifan.li912@gmail.com</a></p>
+            <p>GitHub: <a href="https://github.com/Zifan12" target="_blank">Zifan12</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/zifan-li-a9889b22a/" target="_blank">Zifan Li Edmonton, AB</a></p>
+         </div>
+      </div>
+      </section>
+
+
+
+      <!-- Load particles.js -->
+      <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+      <script>
+         particlesJS.load('particles-js', 'particles.json', function() {
+            console.log('particles.js loaded');
+         });
+      </script>
+
+      <!-- Load Typed.js -->
+      <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+      <script>
+         const typed = new Typed('#typewriter-text', {
+            strings: ['Student', 'AI &amp; Machine Learning Enthusiast', 'Aspiring AI Engineer'],
+            typeSpeed: 70,
+            backSpeed: 40,
+            backDelay: 1500,
+            loop: true
+         });
+      </script>
+
+      <!-- Load Swiper.js -->
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+      <script>
+         const swiper = new Swiper(".projectSwiper", {
+            effect: "coverflow",
+            grabCursor: true,
+            centeredSlides: true,
+            loop: true,
+            slidesPerView: "auto", // required for 3D effect
+            autoplay: {
+               delay: 3000,
+               disableOnInteraction: false,
+            },
+            coverflowEffect: {
+               rotate: 30,        // side card rotation
+               stretch: 0,        // spacing between slides
+               depth: 150,        // z-axis depth
+               modifier: 1.5,     // strength of effect
+               slideShadows: true // gives 3D shadows
+            },
+            navigation: {
+               nextEl: ".swiper-button-next",
+               prevEl: ".swiper-button-prev",
+            },
+            pagination: {
+            el: ".swiper-pagination",
+            clickable: true, 
+            }
+         });
+      </script>
+
+
+      <!-- PDF JS -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.4.120/pdf.min.js"></script>
+      <script>
+         const canvases = document.querySelectorAll('.pdf-canvas');
+
+         canvases.forEach(canvas => {
+            const url = canvas.getAttribute('data-url');
+            const loadingTask = pdfjsLib.getDocument(url);
+
+            loadingTask.promise.then(pdf => {
+               pdf.getPage(1).then(page => {
+                  const scale = 1.5;
+                  const viewport = page.getViewport({ scale });
+
+                  const context = canvas.getContext('2d');
+                  canvas.height = viewport.height;
+                  canvas.width = viewport.width;
+
+                  canvas.style.width = '100%';
+                  canvas.style.height = '100%';
+
+                  page.render({
+                     canvasContext: context,
+                     viewport: viewport
+                  });
+               });
+            }).catch(error => {
+               console.error("PDF loading error:", error);
+            });
+         });
+      </script>
+      <script>
+      function hamburg() {
+         document.getElementById("mobile-menu").classList.add("active");
+      }
+
+      function closeDropdown() {
+         document.getElementById("mobile-menu").classList.remove("active");
+      }
+      </script>
+
+      <!-- AOS JS -->
+      <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+      <script>
+      AOS.init({
+         duration: 1000,      // Animation duration in ms
+         once: true,          // Only animate once per element
+         offset: 100,         // Offset (px) before animation triggers
+      });
+      </script>
+
+
+</body>
+</html>
